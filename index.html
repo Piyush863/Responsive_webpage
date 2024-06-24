@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Page</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">WELCOME TO MY WEBSITE </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to My Responsive Web Page</h1>
+            A carousel, also known as a slider, is a common UI component that allows users to cycle through a series of items, such as images or content panels.
+             It's often used to showcase featured content or highlight various items in a compact and interactive way. 
+             Carousels typically include navigation controls, such as previous/next buttons or indicators (dots) that allow users to move between the items.
+        <br>
+        <div class="carousel">
+                <div class="carousel-item active">  <img src="web.png"> Slide 1</div>
+                <div class="carousel-item"><img src="puri.jpg">Slide 2</div>
+                <div class="carousel-item"><img src="elec.jpg">Slide 3</div>
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Some information about us.
+                Key Features of a Carousel:<br><br>
+Slides: The individual items or panels in the carousel.
+<br>
+Navigation Controls: Buttons or arrows to move to the next or previous slide.<br>
+Indicators: Small dots or thumbnails that indicate the current slide and allow users to navigate directly to a specific slide.<br>
+Autoplay: An optional feature where the carousel automatically transitions between slides after a set period.<br>
+<br>
+Benefits of Using a Carousel:<br><br>
+Space Efficiency: Carousels allow multiple pieces of content to be displayed in a single, compact area.<br>
+Engagement: Interactive elements like carousels can engage users and keep them on your site longer.<br>
+Showcase Content: Carousels are great for highlighting featured content, promotions, or multiple products in e-commerce.<br>
+            </p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="grid-container">
+                <div class="grid-item">HTML</div>
+                <div class="grid-item">CSS</div>
+                <div class="grid-item">JAVASCRIPT</div>
+                <div class="grid-item">BOOTSTRAP</div>
+                <div class="grid-item">AJAX</div>
+                <div class="grid-item">API FETCHING</div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <button id="contactBtn">Open Contact Form</button>
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Form</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
